@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>a/A Survey</title>
+    </head>
+    <body>
+        <h1>a/A Open Survey</h1>
+        <form action="/form-handling-url" method=post>
+            <fieldset>
+                <legend>Add User</legend>
+
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+
+                <div>
+                    <label for="status">Status</label>
+                    <select id="status" name="user_status_name">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+                
+                <p>
+                    <div>
+                        <fieldset>
+                            <legend>Select your favorite programming language</legend>
+
+                            <div>
+                                <input type="radio" id="HTML" name="html">
+                                <label for="html">HTML</lable>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="CSS" name="css">
+                                <label for="css">CSS</label>      
+                            </div>
+
+                            <div>
+                                <input type="radio" id="javascript" name="javascript">
+                                <label for="javascript">JavaScript</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </p>
+
+                <p>
+                    <fieldset>
+                        <legend>Additional Comments</legend>
+                        <label for="comments">Enter any additional comments here</label>
+                        <div>
+                        <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+                        </div>
+                    </fieldset>
+                </p>
+
+                <div>
+                    <label for="current_date">Current Date</label>
+                    <input type="date" id="current_date" name="current_date">
+                </div>
+
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Sign up for our Newsletter</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Agree to Terms and Conditions</label>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+    
+</html>
